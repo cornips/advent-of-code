@@ -1,0 +1,22 @@
+{
+  "name": "advent-of-code",
+  "version": "2023.0.1",
+  "description": "These are my solutions to the Advent of Code puzzles. https://adventofcode.com/",
+  "main": "index.mjs",
+  "author": "https://github.com/cornips",
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "inquirer": "^9.2.12",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.0"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js,.mjs",
+    "lint:fix": "pnpm run lint --fix",
+    "format": "prettier --write **/*.{js,mjs,json}",
+    "validate": "pnpm run format --check && pnpm run lint",
+    "start": "node .",
+    "new": "node new.mjs",
+    "help": "node . -h"
+  }
+}
